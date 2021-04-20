@@ -122,5 +122,13 @@ class Sale extends AbstractRestResource
     {
         return new Sale\Disputes($this->client);
     }
+     
+    /**
+     * @return Sale\Badges
+     */
+    public function badges()
+    {
+        return new Sale\Badges($this->client);
+    }
 
 }
